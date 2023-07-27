@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> F.8 - Exercício 4</title>
+</head>
+
+<body>
+	<h3> F.8 - Exercício 4 </h3>
+	
+	<script>
+		function avalia_nota(x,valor)
+		{
+			notas[x]=valor;
+			if (notas[x]>=10)
+				positivas=positivas+1;
+				document.write( x + "º nota: " + notas[x] + "</br>");
+		}
+		
+		var x,valor;
+		var positivas=0;
+		var notas=new Array();
+		for (x=1; x<=6; x++)
+		{
+			valor=prompt("Insere a classificação:","");
+			avalia_nota(x,valor);
+		}
+		document.write("total de positivas: " + positivas + "</br>");
+	</script>
+</body>
+</html>

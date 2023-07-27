@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> F.8 - Exercício 3</title>
+</head>
+
+<body>
+	<h3> F.8 - Exercício 3 </h3>
+	<script>
+		function calc_soma(num1,num2)
+		{
+			resultado=num1+num2;
+			document.write("A soma é " + resultado);
+		}
+		
+		function calc_sub(num1,num2)
+		{
+			resultado=num1-num2;
+			document.write("A subtração é " + resultado);
+		}
+		
+		function calc_mult(num1,num2)
+		{
+			resultado=num1*num2;
+			document.write("A multiplicação é " + resultado);
+		}
+		
+		function calc_div(num1,num2)
+		{
+			resultado=num1/num2;
+			document.write("A divisão é " + resultado);
+		}
+		
+		var resultado,num1,num2, oper;
+		num1=parseFloat(prompt("Insere o 1º número :",""));
+		num2=parseFloat (prompt("Insere o 2º número :",""));
+		oper=prompt("insere uma operação ( +, -, *, /)","");
+		document.write("1º número: " + num1 + "</br>");
+		document.write("2º número: " + num2 + "</br>");
+		switch (oper)
+		{
+			case "+" :
+				calc_soma(num1,num2);
+				break;
+			case "-" :
+				calc_sub(num1,num2);
+				break;
+			case "*" :
+				calc_mult(num1,num2);
+				break;
+			case "/" :
+				calc_div(num1,num2);
+				break;
+			default:
+				document.write("Operação inválida.</br>");
+		}
+	</script>
+</body>
+</html>
